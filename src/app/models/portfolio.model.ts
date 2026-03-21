@@ -27,7 +27,7 @@ export const PORTFOLIO_DATA = {
   phone: "+254 797 334 258",
   github: "https://github.com/samndambuki",
   linkedin: "https://www.linkedin.com/in/samuel-ndambuki-40026b1a0/",
-  portfolioUrl: "https://samuel-ndambuki-portfolio.vercel.app/",
+  portfolioUrl: "https://sam-angular-portfolio.vercel.app/",
   about: `Software Engineer with over 2 years of experience building and maintaining enterprise web applications, specialising in frontend development using Angular, JavaScript, and TypeScript. Currently working at Smart Applications International on the Smart Insure product, developing scalable, user-centric solutions that enhance usability and system performance. Proficient in modern UI development using Tailwind CSS and Angular Material, with strong version control practices using Git and GitHub and experience in containerisation using Docker.`,
 
   experiences: [
