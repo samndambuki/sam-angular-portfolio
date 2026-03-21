@@ -1,0 +1,39 @@
+<section class="section skills-section" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Skills</span>
+      <h2 class="section-title">My <em>Tech Stack</em></h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        Technologies and tools I work with to build great products.
+      </p>
+    </div>
+
+    <div class="filter-tabs">
+      @for (cat of categories; track cat) {
+      <button
+        class="filter-tab"
+        [class.active]="activeCategory() === cat"
+        (click)="setCategory(cat)"
+      >
+        {{ cat }}
+      </button>
+      }
+    </div>
+
+    <div class="skills-grid">
+      @for (skill of filteredSkills; track skill.name) {
+      <div class="skill-card">
+        <div class="skill-top">
+          <span class="skill-name">{{ skill.name }}</span>
+          <span class="skill-pct">{{ skill.level }}%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" [style.width.%]="skill.level"></div>
+        </div>
+        <span class="skill-cat">{{ skill.category }}</span>
+      </div>
+      }
+    </div>
+  </div>
+</section>

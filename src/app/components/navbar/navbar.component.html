@@ -1,0 +1,26 @@
+<header class="navbar" [class.scrolled]="scrolled()">
+  <div class="nav-inner">
+    <a class="logo" (click)="scrollTo('#hero')">
+      <span class="logo-mark">SN</span>
+      <span class="logo-text">Samuel Ndambuki</span>
+    </a>
+
+    <nav class="nav-links" [class.open]="menuOpen()">
+      @for (item of navItems; track item.label) {
+        <a class="nav-link" (click)="scrollTo(item.href)">{{ item.label }}</a>
+      }
+      <a class="btn btn--primary nav-cta" href="mailto:sam.ndambuki08@gmail.com">
+        Hire Me
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </nav>
+
+    <button class="menu-btn" (click)="toggleMenu()" [class.open]="menuOpen()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+@if (menuOpen()) {
+  <div class="overlay" (click)="closeMenu()"></div>
+}
