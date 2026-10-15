@@ -13,7 +13,16 @@ export class SkillsComponent {
   data = PORTFOLIO_DATA;
   activeCategory = signal("All");
 
-  categories = ["All", "Frontend", "Language", "DevOps"];
+  categories = [
+    "All",
+    "Frontend",
+    "Backend Development",
+    "Databases & ORM",
+    "UI UX",
+    "QA",
+    "Language",
+    "DevOps",
+  ];
 
   get filteredSkills() {
     const cat = this.activeCategory();

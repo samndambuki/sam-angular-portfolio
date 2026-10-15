@@ -28,7 +28,15 @@ export const PORTFOLIO_DATA = {
   github: "https://github.com/samndambuki",
   linkedin: "https://www.linkedin.com/in/samuel-ndambuki-40026b1a0/",
   portfolioUrl: "https://sam-angular-portfolio.vercel.app/",
-  about: `Software Engineer with over 2 years of experience building and maintaining enterprise web applications, specialising in frontend development using Angular, JavaScript, and TypeScript. Currently working at Smart Applications International on the Smart Insure product, developing scalable, user-centric solutions that enhance usability and system performance. Proficient in modern UI development using Tailwind CSS and Angular Material, with strong version control practices using Git and GitHub and experience in containerisation using Docker.`,
+  about: `
+  Full-Stack Software Engineer experienced in building scalable web and enterprise applications. Skilled in Angular, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, Angular Material, Figma, Node.js, and Express.js. Experienced in building RESTful APIs, microservices, backend services, authentication and authorization, API integrations, real-time applications, and modern software architectures.
+
+  Proficient in database technologies including PostgreSQL and MySQL, with hands-on experience using Prisma ORM and working with SQL and NoSQL databases. Experienced in CI/CD, cloud computing, and deploying scalable applications on Microsoft Azure and AWS, with a focus on performance, security, reliability, and maintainability.
+
+  Also experienced in using Figma for UI/UX design, wireframing, prototyping, and translating design concepts into responsive, production-ready interfaces.
+
+  Currently contributing to the Smart Insure platform at Smart Applications International, building secure, scalable, and user-centric solutions while collaborating within Agile teams to deliver high-quality software, optimize performance, and support business-critical enterprise systems.
+  `,
 
   experiences: [
     {
@@ -72,6 +80,14 @@ export const PORTFOLIO_DATA = {
     { name: "JavaScript", category: "Language", level: 100 },
     { name: "Tailwind CSS", category: "Frontend", level: 100 },
     { name: "Angular Material", category: "Frontend", level: 100 },
+    { name: "Bootstrap", category: "Frontend", level: 100 },
+    { name: "Figma", category: "UI UX", level: 100 },
+    { name: "Node.js", category: "Backend Development", level: 100 },
+    { name: "Express.js", category: "Backend Development", level: 100 },
+    { name: "Postgre SQL", category: "Databases & ORM", level: 100 },
+    { name: "MySQL", category: "Databases & ORM", level: 100 },
+    { name: "Prisma ORM", category: "Databases & ORM", level: 100 },
+    { name: "Jest", category: "QA", level: 100 },
     { name: "Docker", category: "DevOps", level: 100 },
     { name: "Git / GitHub", category: "DevOps", level: 100 },
     { name: "GitLab", category: "DevOps", level: 100 },
@@ -79,25 +95,18 @@ export const PORTFOLIO_DATA = {
 
   projects: [
     {
+      title: "Market Sense Portal",
+      description:
+        "AI powered market intelligent platform that helps businesses discover growth opportunities, analyze competitors, analyze markets and make better and informed decissions",
+      tech: ["Angular", "Node.js", "Express.js,PostgreSQL,Prisma ORM"],
+      githubUrl: "https://github.com/samndambuki/market-sense-backend.git",
+    },
+    {
       title: "Online Shoe Shop",
       description:
         "A full-featured e-commerce platform for footwear with product listings, cart management, and a seamless checkout experience built with Angular.",
-      tech: ["Angular", "TypeScript", "SCSS"],
+      tech: ["Angular", "TypeScript", "SCSS", "json-server"],
       githubUrl: "https://github.com/samndambuki/online-shoe-shop",
-    },
-    {
-      title: "Stack Overflow Clone",
-      description:
-        "A developer Q&A community platform replicating core Stack Overflow features — question posting, voting, tagging, and real-time answering.",
-      tech: ["Angular", "TypeScript", "Node.js"],
-      githubUrl: "https://github.com/samndambuki/stack-overflow",
-    },
-    {
-      title: "Online Code Compiler",
-      description:
-        "A browser-based code execution environment supporting multiple programming languages with real-time output, syntax highlighting, and a custom API backend.",
-      tech: ["Angular", "Node.js", "Docker", "Express.js"],
-      githubUrl: "https://github.com/samndambuki/code-zap-frontend",
     },
   ] as Project[],
 
